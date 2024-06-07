@@ -3,19 +3,28 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
 
 header {
-    background-color: #333;
+    background-color: #143a6f;  /* Dark blue */
     color: #fff;
-    padding: 1rem;
+    padding: 0 1rem;  /* Reduced padding to make the header thinner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;  /* Consistent height for the header */
+    font-weight: bold;
     text-align: center;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 nav ul li {
@@ -28,16 +37,55 @@ nav ul li a {
     text-decoration: none;
 }
 
-section {
+main {
+    flex: 1;  /* Take up remaining space */
     padding: 2rem;
 }
 
 footer {
-    background-color: #333;
+    background-color: #143a6f;  /* Dark blue */
     color: #fff;
+    padding: 0 1rem;  /* Reduced padding to make the footer thinner */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;  /* Consistent height for the footer */
+    font-weight: bold;
     text-align: center;
+    margin-top: auto; /* Ensure the footer stays at the bottom */
+}
+
+.bubble {
+    position: relative; /* Ensure position context for the profile picture */
+    background-color: #f8f8ff;  /* Very light blue color, closer to white */
+    border-radius: 15px;
     padding: 1rem;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    width: 50%;  /* Set the width to 80% of the viewport width */
+    margin: 20px auto 0;  /* Add 20px margin on top, auto margin horizontally */
+    text-align: left;  /* Align text to the left */
+    border: 1px solid #ccc;  /* Optional: adds a slight border */
+}
+.profile-picture {
+    width: 150px; /* Set the width and height of the container */
+    height: 150px; /* Same as the width to make it a perfect circle */
+    overflow: hidden; /* Hide any overflow from the image */
+    border-radius: 50%; /* Make it a circle */
+    margin: 0 auto 20px; /* Center horizontally and add bottom margin */
+}
+
+.profile-picture img {
+    width: 100%; /* Ensure the image fills its container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Prevent inline images from having extra space */
+}
+
+
+.bubble h2 {
+    margin-top: 0;
+    font-weight: bold;
+    color: #143a6f;  /* Make the About Me heading the same color as header and footer */
+}
+
+.bubble p {
+    margin: 0;
 }
