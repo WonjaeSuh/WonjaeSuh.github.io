@@ -60,7 +60,7 @@ footer {
     background-color: #f8f8ff;  /* Very light blue color, closer to white */
     border-radius: 15px;
     padding: 1rem;
-    width: 50%;  /* Set the width to 80% of the viewport width */
+    width: 55%;  /* Set the width to 80% of the viewport width */
     margin: 20px auto 0;  /* Add 20px margin on top, auto margin horizontally */
     text-align: left;  /* Align text to the left */
     border: 1px solid #ccc;  /* Optional: adds a slight border */
